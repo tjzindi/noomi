@@ -87,7 +87,7 @@ body {
 .hero {
   margin-top: 80px;
   padding: 5rem 2rem;
-  background: img src="images/img3-hero.png"  center/cover no-repeat;
+  background: url('noomi/images/bk-hero.png') center/cover no-repeat;
   color: white;
 }
 .hero-content-overlay {
@@ -448,7 +448,7 @@ body {
 .contact-section {
     position: relative;
     padding: 5rem 0;
-    background: url('../images/bk-contact.jpg') center/cover no-repeat;
+    background: url('noomi/images/bk-contact.jpg') center/cover no-repeat;
     color: #3f3f3e;
     text-align: center;
     z-index: 0;
