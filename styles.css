@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global font for all body text */
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Logo uses Oxanium bold */
+.logo {
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 1200;
+  font-size: 2.5rem;
+  color: #6B705c;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #eeebe8;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6B705c;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #373835;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #c58c6e;
+}
+
+.nav-cta {
+    background: #6B705c;
+    color: rgb(255, 255, 255);
+    border: #6B705c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-cta:hover {
+    background: #c58c6e;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 80px;
+  padding: 5rem 2rem;
+  background: url('../images/bk-hero.png') center/cover no-repeat;
+  color: white;
+}
+.hero-content-overlay {
+  background: rgba(255, 255, 255, 0.7); /* white with 70% transparency */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.hero-content-overlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-cta {
+  background: transparent;
+  color: #6B705C;
+  border: 2px solid #6B705C;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero-cta:hover {
+  background: #bb7e62;
+  border: 2px solid #bb7e62;
+  color: white;
+  transform: translateY(-2px);
+}
+.light-text {
+  color: #534949; /* soft light gray for readability */
+}
+
+
+.highlight {
+    color: #c58c6e;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.workspace-mockup {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(45deg, #c58c6e, #6B705c);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-image {
+  max-width: 100%;
+  max-height: 90%;
+  border-radius: 20px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+/* About Section */
+.about-section {
+    padding: 5rem 0;
+}
+
+.about-section .container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.stats-card {
+    background: #6B705c;
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.who-we-are h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.who-we-are p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.company-highlight {
+    background: #f5f1eb;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #6B705C;
+}
+
+.highlight-text {
+    font-style: italic;
+    color: #6B705C;
+    font-weight: 500;
+}
+/* Process Section */
+.process-section {
+    padding: 5rem 0;
+    background: #f9f9f9;
+    color: #3f3f3e;
+}
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.process-step {
+    background: #ffffff90;
+    border: 2px solid #6B705C;
+    border-radius: 30px;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c58c6e;
+    margin-bottom: 1rem;
+}
+
+.process-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.process-step p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Support Section */
+.support-section {
+    padding: 5rem 0;
+    background: #f5f1eb;
+}
+
+.support-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.support-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.support-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.support-text ul {
+    list-style: none;
+}
+
+.support-text li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.support-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.code-mockup {
+    width: 100%;
+    height: 300px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.code-mockup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #2a2a2a;
+    border-bottom: 1px solid #444;
+}
+
+.code-mockup::after {
+    content: '<div class="website">\A  <header>\A    <h1>Beautiful Code</h1>\A  </header>\A  <main>\A    <p>Clean & Efficient</p>\A  </main>\A</div>';
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    white-space: pre;
+    line-height: 1.5;
+}
+
+/* Features Section */
+.features-section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: rgb(107, 112, 92, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-card.large {
+    grid-column: span 2;
+    text-align: left;
+    background: #c58c6e;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.feature-card.large h3 {
+    color: white;
+}
+
+.feature-card p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.feature-card.large p {
+    color: rgba(255,255,255,0.9);
+}
+
+.quality-mockup {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    padding: 5rem 0;
+    background: url('../images/bk-contact.jpg') center/cover no-repeat;
+    color: #3f3f3e;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 250, 241, 0.6); /* white with 50% transparency */
+    z-index: 1;
+}
+.contact-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.contact-cta {
+  background: transparent;
+  color: #3f3f3e;
+  border: 2px solid #6B705C;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(28px);
+}
+
+.contact-cta:hover {
+  background: #bb7e62;
+  border: 2px solid #bb7e62;
+  color: white;
+  transform: translateY(30px);
+}
+
+/* Animations */
+.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 1.0s cubic-bezier(0.4, 0, 0.3, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container,
+    .about-section .container,
+    .support-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card.large {
+        grid-column: span 1;
+    }
+}
+
+/* Lightbox Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-content iframe {
+  border-radius: 0 0 8px 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 100001;
+}
+
+/* Fade-in animation */
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add fade-in to modal content */
+.modal.show .modal-content {
+  animation: fadeInModal 0.4s ease-out;
+}
