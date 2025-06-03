@@ -87,7 +87,7 @@ body {
 .hero {
   margin-top: 80px;
   padding: 5rem 2rem;
-  background: url('noomi/images/bk-hero.png') center/cover no-repeat;
+  background: url('images/bk-hero.png') center/cover no-repeat;
   color: white;
 }
 .hero-content-overlay {
