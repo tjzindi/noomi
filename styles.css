@@ -87,7 +87,7 @@ body {
 .hero {
   margin-top: 80px;
   padding: 5rem 2rem;
-  background: url('images/bk-hero.png') center/cover no-repeat;
+  background: url('images/bk-hero1.png') center/cover no-repeat; /* Correct path if in 'images/' folder */
   color: white;
 }
 .hero-content-overlay {
