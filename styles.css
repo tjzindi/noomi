@@ -481,23 +481,23 @@ body {
 }
 
 .contact-cta {
-  background: transparent;
-  color: #3f3f3e;
-  border: 2px solid #6B705C;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  transform: translateY(28px);
+    background: transparent;
+    color: #3f3f3e;
+    border: 2px solid #6B705C;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(20px);
 }
 
 .contact-cta:hover {
-  background: #bb7e62;
-  border: 2px solid #bb7e62;
-  color: white;
-  transform: translateY(30px);
+    background: #bb7e62;
+    border: 2px solid #bb7e62;
+    color: white;
+    transform: translateY(20px);
 }
 
 /* Animations */
