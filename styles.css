@@ -25,12 +25,13 @@ body {
     padding: 0 20px;
 }
 
+
 /* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ffffff80;
+    background: #ffffff;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -59,9 +60,9 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #373835
+    color: #373835;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .nav-menu a:hover {
