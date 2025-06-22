@@ -5,19 +5,22 @@ touch index.html styles.css script.js README.md
 cat << 'EOF' > README.md
 # Noomi Web Development Agency Website
 
-This is a modern, single-page portfolio website template tailored for a **Web Development Agency**. Built with clean HTML, CSS, and JavaScript, the site is designed to be responsive, interactive, and visually engaging.
+A modern, responsive portfolio and projects website template for a **Web Development Agency**. Built with clean HTML, CSS, and JavaScript, this site is designed for performance, accessibility, and SEO best practices.
 
 ---
 
-## 🌟 Features Included
+## 🌟 Features
 
-- ✅ **Responsive Design**: Works across all screen sizes, from mobile to desktop.
+- ✅ **Responsive Design**: Mobile-first, works on all devices.
+- ✅ **SEO-Optimized**: Semantic HTML, meta tags, Open Graph, Twitter Cards, and canonical URLs included.
 - ✅ **Smooth Animations**: Scroll-triggered text animations and hover effects.
 - ✅ **Modern Aesthetic**: Clean, professional layout inspired by industry best practices.
-- ✅ **Single Page Layout**: Seamless scroll experience with anchored sections.
-- ✅ **Web Development Focus**: Content and layout tailored for showcasing agency services.
-- ✅ **Interactive Elements**: Hover effects, buttons, and smooth scrolling interactions.
-- ✅ **Performance Optimized**: Lean code structure and minimal dependencies.
+- ✅ **Single Page & Multi-Page Layouts**: Seamless scroll experience with anchored sections and dedicated project pages.
+- ✅ **Web Development Focus**: Content and layout tailored for showcasing agency services and projects.
+- ✅ **Interactive Elements**: Hover effects, buttons, modals, and smooth scrolling.
+- ✅ **Performance Optimized**: Lean code structure, lazy-loaded images, and minimal dependencies.
+- ✅ **PWA Ready**: Includes manifest and service worker for installability.
+- ✅ **Google Analytics**: Easy integration for traffic and event tracking.
 
 ---
 
@@ -26,15 +29,19 @@ This is a modern, single-page portfolio website template tailored for a **Web De
 \`\`\`
 noomi-website/
 └── html/
-    ├── index.html        # Main webpage
-    ├── styles.css        # Custom styles
-    ├── script.js         # Scroll animations & interactivity
-    └── README.md         # Project documentation
+    ├── index.html             # Main landing page
+    ├── projects.html          # Projects showcase
+    ├── interior-landing.html  # Example project landing page
+    ├── styles.css             # Custom styles
+    ├── script.js              # Scroll animations & interactivity
+    ├── manifest.json          # PWA manifest
+    ├── service-worker.js      # PWA service worker
+    └── README.md              # Project documentation
 \`\`\`
 
 ---
 
-## 🚀 How to Use
+## 🚀 Getting Started
 
 1. Clone or download the repository.
 2. Open the \`html/\` folder in [Visual Studio Code](https://code.visualstudio.com/).
@@ -43,7 +50,7 @@ noomi-website/
 
 ---
 
-## 🛠️ Recommended Extensions
+## 🛠️ Recommended VS Code Extensions
 
 - **Live Server** – Instantly preview your changes
 - **Prettier** – Auto-formatting your code for consistency
@@ -51,18 +58,41 @@ noomi-website/
 
 ---
 
-## 🌐 Deployment Ready
+## 🌐 Deployment
 
 This project is ready for hosting on platforms like:
 
 - GitHub Pages
 - Netlify
 - Vercel
+- Azure Static Web Apps
+
+**SEO Tips:**
+- Customize meta tags in each HTML file for your brand and keywords.
+- Use descriptive alt text for all images.
+- Keep URLs clean and descriptive.
+- Use Open Graph and Twitter meta tags for social sharing.
+- Serve over HTTPS for best SEO results.
+
+---
+
+## 📈 Analytics
+
+Google Analytics 4 is integrated.  
+Replace the Measurement ID in the \`<head>\` of each HTML file with your own for tracking.
 
 ---
 
 ## 📄 License
 
 MIT License – free for personal and commercial use with attribution.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
 EOF
 
