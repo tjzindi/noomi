@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noomi Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZZPBSZE24"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NZZPBSZE24');
+    </script>
+</head>
+<body>
+    <!-- Navigation (reuse the same navbar as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo/logoBrFin.png" alt="Noomi Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="projects.html" class="nav-projects-link">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta">Get Started</button>
+            <button class="hamburger" aria-label="Open navigation">&#9776;</button>
+        </div>
+    </nav>
+
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="projects-title">Our <span class="highlight">Projects</span></h1>
+            <p class="projects-subtitle">A showcase of our latest web creations, crafted for innovation and impact.</p>
+        </div>
+    </section>
+
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="projects-grid">
+              <a href="portfolio.html" class="project-card-link">
+                <div class="project-card project-card--fullwidth project-card--overlay" data-scroll-animation="slide-up">
+                  <div class="project-img-overlay-wrapper">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80"
+                         alt="Modern Portfolio project preview"
+                         class="project-img project-img--fullwidth">
+                    <div class="project-card-content project-card-content--overlay project-card-content--bottomleft">
+                      <h3>Modern Portfolio</h3>
+                      <p>Personal branding site for a creative professional, featuring smooth animations and a bold layout.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="interior-landing.html" class="project-card-link">
+                <div class="project-card project-card--fullwidth project-card--overlay" data-scroll-animation="slide-up">
+                  <div class="project-img-overlay-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                         alt="Interior Design project preview - modern living room"
+                         class="project-img project-img--fullwidth">
+                    <div class="project-card-content project-card-content--overlay project-card-content--bottomleft">
+                      <h3>Interior Design</h3>
+                      <p>Landing page for an interior design company, featuring modern style and real-world inspiration.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="ecommerce.html" class="project-card-link">
+                <div class="project-card project-card--fullwidth project-card--overlay" data-scroll-animation="slide-up">
+                  <div class="project-img-overlay-wrapper">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80"
+                         alt="E-Commerce Redesign project preview"
+                         class="project-img project-img--fullwidth">
+                    <div class="project-card-content project-card-content--overlay project-card-content--bottomleft">
+                      <h3>E-Commerce Redesign</h3>
+                      <p>Full redesign for a boutique shop, with custom product pages and seamless checkout.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.nav-cta, .contact-cta, .hero-cta').forEach(btn => {
+        btn.addEventListener('click', function() {
+          gtag('event', 'cta_click', {
+            'event_category': 'engagement',
+            'event_label': this.textContent.trim()
+          });
+        });
+      });
+    </script>
+</body>
+</html>
