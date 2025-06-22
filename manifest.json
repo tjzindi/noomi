@@ -1,0 +1,20 @@
+{
+  "name": "Noomi Web Development",
+  "short_name": "Noomi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#A95C3A",
+  "theme_color": "#A95C3A",
+  "icons": [
+    {
+      "src": "assets/logo/logoBrFin.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/logoBrFin-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
