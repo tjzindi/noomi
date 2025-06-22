@@ -3,28 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noomi - Best Design in the Web Development Market</title>
+  <title>Noomi | South African Web Development Company - Modern, Responsive Websites</title>
+  <meta name="description" content="Noomi is a leading South African web development company. We create modern, responsive, SEO-optimised websites for businesses in Cape Town, Johannesburg, Durban, and beyond.">
+  <meta name="keywords" content="web development, South Africa, Cape Town, Johannesburg, Durban, website design, SEO, responsive websites, web agency, Noomi, custom websites, web developer, business websites, ecommerce, digital agency">
+  <meta name="author" content="Noomi Web Development">
+  <meta name="robots" content="index, follow">
+  <!-- Theme color for Chrome, Edge, and Android browsers -->
+  <meta name="theme-color" content="#A95C3A">
+  <!-- Fallback for browsers that do not support theme-color (e.g., Firefox, Opera) -->
+  <style>
+    body { background-color: #A95C3A; }
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+      body { background-color: #A95C3A; }
+    }
+  </style>
+  <!-- Theme color for Safari/iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Theme color for Windows Phone -->
+  <meta name="msapplication-TileColor" content="#A95C3A">
+  <meta name="msapplication-navbutton-color" content="#A95C3A">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/logoBrFin.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Noomi | South African Web Development Company">
+  <meta property="og:description" content="Modern, responsive, SEO-optimised websites for South African businesses.">
+  <meta property="og:url" content="https://noomi.co.za/">
+  <meta property="og:image" content="https://noomi.co.za/assets/logo/logoBrFin.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Noomi | South African Web Development Company">
+  <meta name="twitter:description" content="Modern, responsive, SEO-optimised websites for South African businesses.">
+  <meta name="twitter:image" content="https://noomi.co.za/assets/logo/logoBrFin.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://noomi.co.za/">
+
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Fonts: Oxanium for logo, Rubix for body -->
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@1200&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
+  <!-- Fonts: Oxanium for logo, Rubik for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZZPBSZE24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NZZPBSZE24');
+  </script>
+  <link rel="manifest" href="manifest.json">
+</head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo">noomi</span>
+                <img src="assets/logo/logoBrFin.png" alt="Noomi Logo" class="logo-img" width="120" height="40" loading="lazy">
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#process">Process</a></li>
                 <li><a href="#services">Services</a></li>
+<!--               <li><a href="projects.html" class="nav-projects-link">Projects</a></li> --> 
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="nav-cta">Get Started</button>
+            <button class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
         </div>
     </nav>
 
@@ -32,20 +82,20 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content-overlay">
-  <div class="hero-content">
-    <h1 class="hero-title">
-  <span class="light-text">Bringing</span> <span class="highlight">Simplicity</span><br>
-  <span class="light-text">To The Web</span>
-</h1>
-    <p class="hero-subtitle">Clean, beautiful, responsive websites for modern brands.</p>
-    <button class="hero-cta">Start Your Project</button>
-  </div>
-</div>
-           <div class="hero-image">
-  <div class="workspace-mockup">
-    <img src="images/img3-hero.png" alt="Workspace Content" class="mockup-image">
-  </div>
-</div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="light-text">Bringing</span> <span class="highlight">Simplicity</span><br>
+                        <span class="light-text">To The Web</span>
+                    </h1>
+                    <p class="hero-subtitle">Clean, beautiful, responsive websites for modern brands in South Africa.</p>
+                    <button class="hero-cta">Start Your Project</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="workspace-mockup">
+                    <img src="assets/logo/logoBlMob.png" alt="Noomi logo in bold modern font centered on a dark background representing a creative and professional web development workspace, conveying a sense of innovation and trust" class="mockup-image" width="320" height="180" loading="lazy">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -56,10 +106,9 @@
                 <div class="stat-number">10 Years</div>
                 <div class="stat-label">Website<br>Development</div>
             </div>
-            
             <div class="who-we-are">
                 <h2>Who <span class="highlight">We</span> Are</h2>
-                <p><span class="logo">noomi</span> is a forward-thinking web development agency. We specialize in creating custom, high-performance websites. We combine cutting-edge technology with creative design to deliver exceptional digital experiences.</p>
+                <p><span class="logo">noomi</span> is a forward-thinking web development agency based in South Africa. We specialise in creating custom, high-performance websites. We combine cutting-edge technology with creative design to deliver exceptional digital experiences for businesses in Cape Town, Johannesburg, Durban, and beyond.</p>
                 <div class="company-highlight">
                     <span class="highlight-text">Expert developers and designers working together to bring your vision to life</span>
                 </div>
@@ -73,21 +122,18 @@
             <div class="section-header">
                 <h2>How We <span class="highlight">Simplify</span> Your<br>Web Development Experience</h2>
             </div>
-            
             <div class="process-grid">
-                <div class="process-step">
+                <div class="process-step" data-scroll-animation="slide-up">
                     <div class="step-number">01</div>
                     <h3>Discovery & Planning</h3>
                     <p>We start by understanding your business goals, target audience, and technical requirements to create a comprehensive project roadmap.</p>
                 </div>
-                
-                <div class="process-step">
+                <div class="process-step" data-scroll-animation="slide-up">
                     <div class="step-number">02</div>
                     <h3>Design & Prototyping</h3>
                     <p>Our designers create stunning mockups and interactive prototypes that bring your vision to life before development begins.</p>
                 </div>
-                
-                <div class="process-step">
+                <div class="process-step" data-scroll-animation="slide-up">
                     <div class="step-number">03</div>
                     <h3>Development & Testing</h3>
                     <p>Using modern technologies and best practices, we build responsive, fast, and secure websites with thorough testing.</p>
@@ -100,7 +146,7 @@
     <section class="support-section">
         <div class="container">
             <div class="support-content">
-                <div class="support-text">
+                <div class="support-text" data-scroll-animation="slide-from-left">
                     <h2>After-Launch <span class="highlight">Support</span><br>and <span class="highlight">Maintenance</span></h2>
                     <p>Our commitment to your success doesn't end at launch. We provide ongoing support, updates, and maintenance to ensure your website continues to perform at its best and stays secure.</p>
                     <ul>
@@ -121,33 +167,28 @@
     <section class="features-section" id="services">
         <div class="container">
             <h2>Why <span class="highlight">Choose</span> noomi</h2>
-            
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-scroll-animation="fade-scale">
                     <div class="feature-icon">🎨</div>
-                    <h3>SEO Optimized Design</h3>
-                    <p>Every website is uniquely built with search engine optimization in mind to help your website rank higher.</p>
+                    <h3>SEO Optimised Design</h3>
+                    <p>Every website is uniquely built with search engine optimisation in mind to help your website rank higher in South Africa and globally.</p>
                 </div>
-
-                <div class="feature-card">
+                <div class="feature-card" data-scroll-animation="fade-scale">
                     <div class="feature-icon">⚡</div>
-                    <h3>Swift Delivery</h3>
-                    <p>Optimized for speed and performance, ensuring excellent user experience and better search rankings.</p>
+                    <h3>Swift Loading</h3>
+                    <p>Optimised for speed and performance, ensuring excellent user experience and better search rankings.</p>
                 </div>
-                
-                <div class="feature-card">
+                <div class="feature-card" data-scroll-animation="fade-scale">
                     <div class="feature-icon">📱</div>
-                    <h3>Mobile-Friendly</h3>
+                    <h3>Mobile-Ready</h3>
                     <p>Responsive designs that work perfectly on all devices, from smartphones to desktop computers.</p>
                 </div>
-                
-                <div class="feature-card">
+                <div class="feature-card" data-scroll-animation="fade-scale">
                     <div class="feature-icon">🔒</div>
                     <h3>Secure & Reliable</h3>
                     <p>Built with security best practices and reliable hosting solutions to protect your business.</p>
                 </div>
-                
-                <div class="feature-card large">
+                <div class="feature-card large" data-scroll-animation="slide-up">
                     <h3>Superior Quality</h3>
                     <p>We use cutting-edge technologies and follow industry best practices to deliver websites that exceed expectations and drive business growth.</p>
                     <div class="quality-mockup"></div>
@@ -159,26 +200,34 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2>Ready to Transform Your Online Presence?</h2>
-            <p>Let's discuss your project and create something amazing together.</p>
-            <button class="contact-cta">Start Today</button>
+            <h2>Helping your Business Look Professional.</h2>
+            <p>Let's discuss your project goals today.</p>
+            <button class="contact-cta">Contact Us</button>
         </div>
     </section>
     
     <!-- Custom Google Form Lightbox -->
-<div id="googleFormModal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close" id="closeModal">&times;</span>
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLScrOAbUG_yXanmm2Z7G3eWTHMWqtsppr5GfDObJqplxQcz-rA/viewform?embedded=true"
-      width="100%" 
-      height="600" 
-      frameborder="0"
-      style="border: none;">Loading…</iframe>
-  </div>
-</div>
+    <div id="googleFormModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-form-title">
+      <div class="modal-content">
+        <span class="modal-close" id="closeModal" tabindex="0" aria-label="Close contact form">&times;</span>
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLScrOAbUG_yXanmm2Z7G3eWTHMWqtsppr5GfDObJqplxQcz-rA/viewform?embedded=true"
+          width="100%" 
+          height="600" 
+          frameborder="0"
+          title="Contact form for Noomi web development project inquiries"
+          class="google-form-iframe"
+          aria-label="Contact form for Noomi web development project inquiries">Loading…</iframe>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-    
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
 </body>
 </html>
